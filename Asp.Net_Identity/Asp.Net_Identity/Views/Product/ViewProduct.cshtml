@@ -1,0 +1,21 @@
+﻿@model DataConnection.Product
+
+@if (Model.Id !=0)
+{
+	<div>
+		<div class="row">
+			<div class="col-md-6 col-xs-12" style="padding:30px">
+				<h2 class="card-title">Name : <strong>@Model.Name</strong></h2>
+				<h2 class="card-text">Price : <strong> @Model.Price</strong> </h2>
+				<h2 class="card-text">Last Updated : <strong> @Model.LastUpdated</strong></h2>
+			</div>
+			<div class="col-md-6 col-xs-12" style="padding:20px">
+				<img src="@Model.Photo" style="height: 100%; width: 100%" />
+			</div>
+		</div>
+	</div>
+}
+else
+{
+	<h3>No Data To Show </h3>
+}

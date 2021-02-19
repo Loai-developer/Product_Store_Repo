@@ -1,0 +1,84 @@
+﻿@using DataConnection
+@{
+	ViewBag.Title = "Index";
+	var SearchTextValue = ViewBag.SearchText;
+}
+
+<h2>Products</h2>
+<div>
+	<button id="AddProductBtn" class="btn btn-primary">@Html.ActionLink("Add", "AddProduct", "Product", new Product(), null)</button>
+</div>
+
+<br />
+
+<div class="input-group">
+	<div class="form-outline">
+		<input type="search" id="SearchText" name="SearchText" value="@SearchTextValue" class="form-control" placeholder="search by name or price" />
+	</div>
+	<button type="button" id="SearchProductBtn" class="btn btn-primary">
+		<i class="fa fa-search"></i>
+	</button>
+</div>
+
+<br />
+<table id="table-Products" class="table table-striped">
+	<thead>
+		<tr>
+			<th scope="col"></th>
+			<th scope="col">Name</th>
+			<th scope="col">Price</th>
+			<th scope="col">Last Updated</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var product in ViewBag.ListOfProducts)
+		{
+			<tr>
+
+				<th scope="row">@product.Id</th>
+				<th scope="row">@product.Name</th>
+				<td scope="row">@product.Price</td>
+				<td scope="row">@product.LastUpdated</td>
+				<td>
+					<button id="ViewProductBtn-@product.Id" class="btn btn-success">@Html.ActionLink("View", "ViewProduct", "Product", product as DataConnection.Product, null)</button> |
+					<button id="EditProductBtn-@product.Id" class="btn btn-warning">@Html.ActionLink("Edit", "AddProduct", "Product", product as DataConnection.Product, null)</button> |
+					<button id="DeleteProductBtn-@product.Id" class="btn btn-danger">@Html.ActionLink("Delete", "DeleteProduct", "Product", product as DataConnection.Product, null)</button>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+<div>
+	<button id="ExportToExcelProductBtn" class="btn btn-info">@Html.ActionLink("Export To Excel", "ExportToExcel", "Product", new { SearchText = @SearchTextValue}, null)</button> 
+</div>
+
+<script>
+
+	$("#SearchProductBtn").on("click", function (e) {
+		e.preventDefault();
+		var SearchText = $("#SearchText").val();
+		var pathname = window.location.pathname + "?SearchText=" + SearchText;
+		console.log("Path", pathname);
+		window.location = pathname;
+	})
+
+</script>
+<style>
+	a {
+		text-decoration: none !important;
+		color: white
+	}
+
+		a:hover {
+			color: white;
+		}
+
+	.input-group {
+		display: flex;
+	}
+
+	#SearchText {
+		width: 100%;
+	}
+</style>

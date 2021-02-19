@@ -1,0 +1,15 @@
+D:\Asp.Net_Identity\ServiceLayer\obj\Debug\netstandard2.0\ServiceLayer.csprojAssemblyReference.cache
+D:\Asp.Net_Identity\ServiceLayer\obj\Debug\netstandard2.0\ServiceLayer.csproj.CoreCompileInputs.cache
+D:\Asp.Net_Identity\ServiceLayer\obj\Debug\netstandard2.0\ServiceLayer.AssemblyInfoInputs.cache
+D:\Asp.Net_Identity\ServiceLayer\obj\Debug\netstandard2.0\ServiceLayer.AssemblyInfo.cs
+D:\Asp.Net_Identity\ServiceLayer\bin\Debug\netstandard2.0\ServiceLayer.deps.json
+D:\Asp.Net_Identity\ServiceLayer\bin\Debug\netstandard2.0\ServiceLayer.dll
+D:\Asp.Net_Identity\ServiceLayer\bin\Debug\netstandard2.0\ServiceLayer.pdb
+D:\Asp.Net_Identity\ServiceLayer\bin\Debug\netstandard2.0\Repository.dll
+D:\Asp.Net_Identity\ServiceLayer\bin\Debug\netstandard2.0\EntityFramework.dll
+D:\Asp.Net_Identity\ServiceLayer\bin\Debug\netstandard2.0\Repository.pdb
+D:\Asp.Net_Identity\ServiceLayer\obj\Debug\netstandard2.0\ServiceLayer.csproj.CopyComplete
+D:\Asp.Net_Identity\ServiceLayer\obj\Debug\netstandard2.0\ServiceLayer.dll
+D:\Asp.Net_Identity\ServiceLayer\obj\Debug\netstandard2.0\ServiceLayer.pdb
+D:\Asp.Net_Identity\ServiceLayer\bin\Debug\netstandard2.0\EntityFramework.xml
+D:\Asp.Net_Identity\ServiceLayer\bin\Debug\netstandard2.0\DataConnection.dll
